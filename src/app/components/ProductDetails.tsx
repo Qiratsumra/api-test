@@ -1,6 +1,4 @@
-"use client";
-
-import Image from "next/image";
+'use client'
 import { urlFor } from "../../../src/ulits/urlfor"; // Correct import
 
 export default function ProductDetails({ products }: any) {
@@ -12,8 +10,7 @@ export default function ProductDetails({ products }: any) {
           {/* Top Image */}
           <div className="h-[300px] sm:h-[450px] flex items-center justify-center mb-6">
             <img
-              width={600}
-              height={200}
+            
               src={urlFor(products.image).width(600).url()} // Use urlFor to generate URL
               alt={products.name}
               className="object-contain mx-auto h-full w-full rounded-lg shadow-md"

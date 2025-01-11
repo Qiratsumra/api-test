@@ -8,6 +8,7 @@ export const SanityConfig =defineConfig({
     title:'/studio',
     projectId:'lu5n0ucv',
     dataset:'production',
+    apiVersion: '2025-01-11',
     plugins:[structureTool(),visionTool()],
     basePath:'/studio',
     schema:{
